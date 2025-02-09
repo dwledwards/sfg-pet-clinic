@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.dwedwards</groupId>
 	<artifactId>sfg-pet-clinic</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
     <packaging>pom</packaging>
     <name>sfg-pet-clinic</name>
 	<description>SFG Pet Clinic</description>
@@ -25,10 +25,8 @@
 		<module>pet-clinic-web</module>
 	</modules>
     <scm>
-		<connection></connection>
 		<developerConnection>scm:git:https://github.com/dwledwards/sfg-pet-clinic.git</developerConnection>
-		<tag>sfg-pet-clinic-0.0.1</tag>
-		<url></url>
+		<tag>sfg-pet-clinic-0.0.2</tag>
 	</scm>
 	<properties>
 		<java.version>23</java.version>
@@ -64,6 +62,7 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<configuration>
 					<goals>install</goals>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<checkModificationExcludes>
 						<checkModificationExclude>pom.xml</checkModificationExclude>
 					</checkModificationExcludes>
